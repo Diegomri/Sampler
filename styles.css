@@ -1,0 +1,73 @@
+
+#cuelpo{
+
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 182, 160);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#samples{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 20px;
+}
+
+.sample{
+    border-radius: 3px;
+    background-color:rgb(67, 69, 54);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.271);
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+.sample:hover{
+    transition: 300ms;
+    background-color: rgb(32, 34, 26);
+}
+
+
+
+
+
+
+
+#sep_banco{
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+}
+
+#sep_knobs{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
+#knobs{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+}
+#sep_but{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    justify-content: center;
+}
+
+
+
+
+
+
+.but{
+    width: 40px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.knob{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: blueviolet;
+}
