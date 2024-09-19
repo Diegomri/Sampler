@@ -1,4 +1,9 @@
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #cuelpo{
 
     display: grid;
@@ -7,6 +12,7 @@
     align-items: center;
     background-color: rgb(178, 182, 160);
     grid-template-columns: repeat(2, 1fr);
+    width: 700px;
 }
 
 #samples{
@@ -26,6 +32,7 @@
 .sample:hover{
     transition: 300ms;
     background-color: rgb(32, 34, 26);
+    cursor: grab;
 }
 
 
@@ -46,13 +53,28 @@
 #knobs{
     display: grid;
     grid-template-columns: repeat(2, 50px);
+    position: relative;
+    left: 60px;
 }
 #sep_but{
     display: grid;
-    grid-template-columns: repeat(2, 50px);
+    grid-template-columns: repeat(2,50px);
+    width: 140px;
+    height: 60px;
     justify-content: center;
-}
+    align-items: center;
+    background-color: rgb(241, 234, 199);
+    border-radius: 10px;
 
+}
+#banco{
+    position: relative;
+    top: 20px;
+    width: 190px;
+    left:-4px;
+    display:flex;   
+    justify-content: space-around;
+}
 
 
 
@@ -60,9 +82,11 @@
 
 .but{
     width: 40px;
-    height: 10px;
+    height: 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
 }
 .knob{
     width: 40px;
@@ -70,4 +94,11 @@
     border-radius: 20px;
     border: none;
     background-color: blueviolet;
+}
+.bank{
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
